@@ -1,10 +1,12 @@
 #include <iostream>
 #include "Account.h"
 
+using namespace std;
+
 int main() {
     Account account = Account("Jonathan Steele", 1000);
     account.makeWithdrawl(500);
-    std::cout << account.getBalance() << std::endl;
+    cout << account.getBalance() << endl;
     account.makeDeposit(100);
-    std::cout << account.getBalance() << std::endl;
+    cout << account.getBalance() << endl;
 }
