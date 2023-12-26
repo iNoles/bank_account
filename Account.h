@@ -6,22 +6,27 @@
 using namespace std;
 
 class Account {
-    private:
-    string name;
+    protected:
+    string accountHolderName;
     double balance;
 
     public:
-    Account(string name, double initialBalance) {
-        this->name = name;
-        balance = initialBalance;
+    // Constructor
+    Account(const string& holderName, double initialBalance)
+        : accountHolderName(holderName), balance(initialBalance) {}
+
+    // Member functions
+    virtual void displayAccountInfo() const {
+        cout << "Account Holder: " << accountHolderName << endl;
+        cout << "Balance: $" << balance << endl;
     }
-    void makeDeposit(double amount) {
+    virtual void makeDeposit(double amount) {
         if (amount <= 0) {
             throw invalid_argument("amount must be postive");
         }
         balance += amount;
     }
-    void makeWithdrawl(double amount) {
+    virtual void makeWithdrawl(double amount) {
         if (amount <= 0) {
             throw invalid_argument("amount must be postive");
         }
@@ -30,7 +35,7 @@ class Account {
             throw invalid_argument("Not sufficient funds for this withdrawal");
         }
     }
-    double getBalance() {
+    virtual double getBalance() {
         return balance;
     }
 };
