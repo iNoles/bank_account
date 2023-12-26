@@ -26,7 +26,7 @@ To build the project, follow these steps:
    ```
 3. Compile the source code:
      ```bash
-     g++ -o bank_account Account.h Program.cpp
+     g++ -o bank_account Program.cpp
      ```
 ## How to Run
 After building the project, run the executable:
