@@ -1,34 +1,33 @@
-#include <iostream>
 #include "Checking.h"
 #include "Saving.h"
+#include <iostream>
 
 using namespace std;
 
 int main() {
-     // Create a checking account
-    CheckingAccount checking("Alice Johnson", 1000.0, 500.0);
-    checking.displayAccountInfo();
+  // Create a checking account
+  CheckingAccount checking("Alice Johnson", 1000.0, 500.0);
+  checking.displayAccountInfo();
 
-    checking.makeWithdrawl(500.0);
-    cout << "After Withdrawl: $" << checking.getBalance() << endl;
-    
-    checking.makeDeposit(100.0);
-    cout << "After deposit: $" << checking.getBalance() << "\n" << endl;
+  checking.makeWithdrawl(500.0);
+  cout << "After Withdrawl: $" << checking.getBalance() << endl;
 
-    // Display final account information
-    checking.displayAccountInfo();
+  checking.makeDeposit(100.0);
+  cout << "After deposit: $" << checking.getBalance() << "\n" << endl;
 
+  // Display final account information
+  checking.displayAccountInfo();
 
-    // Create a savings account
-    SavingsAccount savings("Bob Smith", 2000.0, 3.5);
-    savings.displayAccountInfo();
+  // Create a savings account
+  SavingsAccount savings("Bob Smith", 2000.0, 3.5);
+  savings.displayAccountInfo();
 
-    // Perform transactions
-    savings.makeDeposit(500.0);
-    cout << "After deposit: $" << savings.getBalance() << "\n" << endl;
+  // Perform transactions
+  savings.makeDeposit(500.0);
+  cout << "After deposit: $" << savings.getBalance() << "\n" << endl;
 
-    savings.addInterest();
+  savings.addInterest();
 
-    // Display final account information
-    savings.displayAccountInfo();
+  // Display final account information
+  savings.displayAccountInfo();
 }
