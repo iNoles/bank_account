@@ -1,12 +1,12 @@
 Copyright 2024 Jonathan Steele
-  
+
 #ifndef ACCOUNT_H_
 #define ACCOUNT_H_
 
 #include <iostream>
 #include <string>
 
-using namespace std;
+    using namespace std;
 
 class Account {
 protected:

@@ -3,7 +3,8 @@ Copyright 2024 Jonathan Steele
 #include "Checking.h"
 #include "Saving.h"
 
-int main() {
+    int
+    main() {
   // Create a checking account
   CheckingAccount checking("Alice Johnson", 1000.0, 500.0);
   checking.displayAccountInfo();

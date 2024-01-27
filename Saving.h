@@ -5,7 +5,7 @@ Copyright 2024 Jonathan Steele
 
 #include "Account.h"
 
-class SavingsAccount : public Account {
+    class SavingsAccount : public Account {
 private:
   double interestRate;
 
