@@ -1,5 +1,7 @@
-#ifndef CHECKING_H
-#define CHECKING_H
+Copyright 2024 Jonathan Steele
+
+#ifndef CHECKING_H_
+#define CHECKING_H_
 
 #include "Account.h"
 
@@ -34,4 +36,4 @@ public:
   }
 };
 
-#endif // CHECKING_H
+#endif // CHECKING_H_
