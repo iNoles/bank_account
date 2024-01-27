@@ -34,4 +34,4 @@ public:
   }
 };
 
-#endif
+#endif // CHECKING_H

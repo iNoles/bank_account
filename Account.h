@@ -38,4 +38,4 @@ public:
   virtual double getBalance() { return balance; }
 };
 
-#endif
+#endif // ACCOUNT_H

@@ -1,8 +1,5 @@
 #include "Checking.h"
 #include "Saving.h"
-#include <iostream>
-
-using namespace std;
 
 int main() {
   // Create a checking account
