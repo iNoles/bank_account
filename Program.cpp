@@ -1,3 +1,5 @@
+Copyright 2024 Jonathan Steele
+
 #include "Checking.h"
 #include "Saving.h"
 
