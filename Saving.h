@@ -1,9 +1,9 @@
-#ifndef SAVING_H
-#define SAVING_H
+Copyright 2024 Jonathan Steele
+
+#ifndef SAVING_H_
+#define SAVING_H_
 
 #include "Account.h"
-
-using namespace std;
 
 class SavingsAccount : public Account {
 private:
@@ -15,6 +15,8 @@ public:
       : Account(holderName, initialBalance), interestRate(interest) {}
 
   void displayAccountInfo() const {
+    using std::cout;
+    using std::endl;
     cout << "Savings Account Information" << endl;
     Account::displayAccountInfo();
     cout << "Interest Rate: " << interestRate << "% \n" << endl;
@@ -26,4 +28,4 @@ public:
   }
 };
 
-#endif // SAVING_H
+#endif // SAVING_H_
