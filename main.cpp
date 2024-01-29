@@ -1,7 +1,7 @@
-Copyright 2024 Jonathan Steele
+// Copyright 2024 Jonathan Steele
 
 #include "Checking.h"
-#include "Saving.h"
+#include "Savings.h"
 
     int
     main() {
