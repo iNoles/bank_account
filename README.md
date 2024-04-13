@@ -1,6 +1,6 @@
 # C++ Bank Account Project
 
-This C++ Bank Account project is a simple implementation of a basic banking system. It provides a set of features commonly found in a typical bank and saving account, such as deposit, withdrawal, and balance inquiry.
+This C++ Bank Account project is a simple implementation of a basic banking system. It provides features commonly found in a typical bank and savings account, such as deposit, withdrawal, and balance inquiry.
 
 ## Features
 
