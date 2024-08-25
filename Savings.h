@@ -1,7 +1,5 @@
-// Copyright 2024 Jonathan Steele
-
-#ifndef SAVING_H_
-#define SAVING_H_
+#ifndef SAVINGS_H_
+#define SAVINGS_H_
 
 #include "Account.h"
 
@@ -14,9 +12,8 @@ public:
                  double interest)
       : Account(holderName, initialBalance), interestRate(interest) {}
 
-  void displayAccountInfo() const;
-
+  void displayAccountInfo() const override;
   void addInterest();
 };
 
-#endif // SAVING_H_
+#endif // SAVINGS_H_
