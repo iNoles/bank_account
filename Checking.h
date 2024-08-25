@@ -1,5 +1,3 @@
-// Copyright 2024 Jonathan Steele
-
 #ifndef CHECKING_H_
 #define CHECKING_H_
 
@@ -14,8 +12,8 @@ public:
                   double overdraft)
       : Account(holderName, initialBalance), overdraftLimit(overdraft) {}
 
-  void displayAccountInfo() const;
-  void makeWithdrawl(double amount);
+  void displayAccountInfo() const override;
+  void makeWithdrawal(double amount) override;
 };
 
 #endif // CHECKING_H_
