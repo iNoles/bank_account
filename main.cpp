@@ -1,19 +1,16 @@
-// Copyright 2024 Jonathan Steele
-
 #include "Checking.h"
 #include "Savings.h"
 
-    int
-    main() {
+int main() {
   // Create a checking account
   CheckingAccount checking("Alice Johnson", 1000.0, 500.0);
   checking.displayAccountInfo();
 
-  checking.makeWithdrawl(500.0);
-  cout << "After Withdrawl: $" << checking.getBalance() << endl;
+  checking.makeWithdrawal(500.0);
+  cout << "After Withdrawal: $" << checking.getBalance() << endl;
 
   checking.makeDeposit(100.0);
-  cout << "After deposit: $" << checking.getBalance() << "\n" << endl;
+  cout << "After Deposit: $" << checking.getBalance() << "\n" << endl;
 
   // Display final account information
   checking.displayAccountInfo();
@@ -24,10 +21,12 @@
 
   // Perform transactions
   savings.makeDeposit(500.0);
-  cout << "After deposit: $" << savings.getBalance() << "\n" << endl;
+  cout << "After Deposit: $" << savings.getBalance() << "\n" << endl;
 
   savings.addInterest();
 
   // Display final account information
   savings.displayAccountInfo();
+
+  return 0;
 }
