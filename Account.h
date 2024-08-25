@@ -1,9 +1,8 @@
-// Copyright 2024 Jonathan Steele
-
 #ifndef ACCOUNT_H_
 #define ACCOUNT_H_
 
 #include <iostream>
+#include <stdexcept>
 #include <string>
 
 using namespace std;
@@ -21,8 +20,8 @@ public:
   // Member functions
   virtual void displayAccountInfo() const;
   virtual void makeDeposit(double amount);
-  virtual void makeWithdrawl(double amount);
-  virtual double getBalance();
+  virtual void makeWithdrawal(double amount);
+  virtual double getBalance() const;
 };
 
 #endif // ACCOUNT_H_
