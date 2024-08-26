@@ -1,6 +1,6 @@
-# C++ Bank Account Project
+# Bank Account Management System
 
-This C++ Bank Account project is a simple implementation of a basic banking system. It provides features commonly found in a typical bank and savings account, such as deposit, withdrawal, and balance inquiry.
+This C++ Bank Account Management System is a simple console-based application that simulates a basic banking system. It allows users to perform fundamental banking operations, such as depositing, withdrawing funds, and checking the account balance. The project focuses on essential functionalities typically found in checking and savings accounts.
 
 ## Features
 
@@ -10,7 +10,7 @@ This C++ Bank Account project is a simple implementation of a basic banking syst
 
 ## Dependencies
 
-This project has no external dependencies. It is a standalone C++ application.
+This project has no external dependencies and is built purely with standard C++ libraries. It is a standalone C++ application that requires only a compatible compiler.
 
 ## How to Build
 
@@ -26,7 +26,7 @@ To build the project, follow these steps:
    ```
 3. Compile the source code:
      ```bash
-     g++ -o bank_account Account.cpp Savings.cpp Checking.cpp main.cpp
+     g++ -std=c++11 -o bank_account Account.cpp Savings.cpp Checking.cpp main.cpp
      ```
 ## How to Run
 After building the project, run the executable:
