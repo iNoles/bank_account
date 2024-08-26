@@ -10,7 +10,7 @@ This C++ Bank Account Management System is a simple console-based application th
 
 ## Dependencies
 
-This project has no external dependencies and is built purely with standard C++ libraries. It is a standalone C++ application that requires only a compatible compiler.
+This project has no external dependencies and is built purely with standard C++ libraries. It is a standalone C++ application with a C++11 extension that requires only a compatible compiler.
 
 ## How to Build
 
