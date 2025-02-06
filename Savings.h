@@ -2,14 +2,16 @@
 #define SAVINGS_H_
 
 #include "Account.h"
+#include <optional>
+#include <string_view>
 
 class SavingsAccount : public Account {
 private:
-  double interestRate;
+  std::optional<double> interestRate; // Optional interest rate
 
 public:
-  SavingsAccount(const string &holderName, double initialBalance,
-                 double interest)
+  // Constructor
+  SavingsAccount(std::string_view holderName, double initialBalance, std::optional<double> interest = std::nullopt)
       : Account(holderName, initialBalance), interestRate(interest) {}
 
   void displayAccountInfo() const override;

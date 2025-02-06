@@ -1,27 +1,38 @@
 #ifndef ACCOUNT_H_
 #define ACCOUNT_H_
 
-#include <iostream>
 #include <stdexcept>
 #include <string>
-
-using namespace std;
+#include <vector>
+#include <optional>
+#include <string_view>
+#include <iostream>
 
 class Account {
 protected:
-  string accountHolderName;
+  std::string accountHolderName;
   double balance;
+  std::vector<std::string> transactionHistory;
 
 public:
-  // Constructor
-  Account(const string &holderName, double initialBalance)
+  // Constructor using std::string_view to avoid unnecessary copies
+  Account(std::string_view holderName, double initialBalance)
       : accountHolderName(holderName), balance(initialBalance) {}
+
+  virtual ~Account() = default; // Virtual destructor for proper cleanup
 
   // Member functions
   virtual void displayAccountInfo() const;
   virtual void makeDeposit(double amount);
   virtual void makeWithdrawal(double amount);
-  virtual double getBalance() const;
+  
+  // Getters
+  double getBalance() const;
+  std::string_view getAccountHolderName() const;
+
+  // Transaction history
+  void displayTransactionHistory() const;
+  std::optional<std::string> getLastTransaction() const; // Optional last transaction
 };
 
 #endif // ACCOUNT_H_

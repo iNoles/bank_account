@@ -26,7 +26,7 @@ To build the project, follow these steps:
    ```
 3. Compile the source code:
      ```bash
-     g++ -std=c++11 -o bank_account Account.cpp Savings.cpp Checking.cpp main.cpp
+     g++ -std=c++17 -o bank_account Account.cpp Savings.cpp Checking.cpp main.cpp
      ```
 ## How to Run
 After building the project, run the executable:
