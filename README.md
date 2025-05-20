@@ -33,3 +33,45 @@ After building the project, run the executable:
 ```bash
 ./bank_account
 ```
+## Sample Output
+
+Checking Account Information
+Account Holder: Alice Johnson
+Balance: $1000
+Overdraft Limit: $500
+
+After Withdrawal: $500
+Transaction History for Alice Johnson:
+- Withdrew: $500.000000
+
+After Deposit: $600
+
+Transaction History for Alice Johnson:
+- Withdrew: $500.000000
+- Deposited: $100.000000
+
+Checking Account Information
+Account Holder: Alice Johnson
+Balance: $600
+Overdraft Limit: $500
+
+Savings Account Information
+Account Holder: Bob Smith
+Balance: $2000
+Interest Rate: 3.50%
+
+After Deposit: $2500.00
+
+Transaction History for Bob Smith:
+- Deposited: $500.000000
+
+After Interest: $2587.50
+
+Savings Account Information
+Account Holder: Bob Smith
+Balance: $2587.50
+Interest Rate: 3.50%
+
+Transaction History for Bob Smith:
+- Deposited: $500.000000
+- Interest Added: $87.500000
