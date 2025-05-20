@@ -75,4 +75,5 @@ Interest Rate: 3.50%
 
 Transaction History for Bob Smith:
 - Deposited: $500.000000
-- Interest Added: $87.500000```
+- Interest Added: $87.500000
+```
